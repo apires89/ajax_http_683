@@ -3,11 +3,23 @@
   <head>
     <meta charset="UTF-8">
     <title>Playground - JavaScript 101</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   </head>
   <body>
-    <p style="margin-top: 40vh; text-align: center; font: normal 24px monospace;">
-      Open the console 🤓
-    </p>
+    <div class="container text-center">
+      <form id="search-movies" class="form-inline">
+        <input id="query" type="text" class="form-control ml-auto" placeholder="Find Movies!">
+        <input type="submit" class="btn btn-primary" value="Search">
+      </form>
+      <form id="algolia-form" class="form-inline">
+        <input id="algolia-query" type="text" class="form-control ml-auto" placeholder="Find a Location!">
+        <input type="submit" class="btn btn-primary" value="Search">
+      </form>
+      <button style="display:none" class="btn btn-primary" id="click-me">Click me!</button>
+      <ul id="results" style="margin-top: 40vh; text-align: center; font: normal 24px monospace;">
+      </ul>
+    </div>
+
 
     <!-- Add some HTML in here -->
 
